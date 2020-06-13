@@ -1,0 +1,11 @@
+platform :ios, '11.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'LoadDemo' do
+  pod 'MJRefresh'
+  pod 'Kingfisher'
+  pod 'Alamofire'
+  pod 'Moya'
+  
+end
