@@ -21,6 +21,7 @@
 		5B0C13962494C79000DB1763 /* ZLLoadAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C138F2494C79000DB1763 /* ZLLoadAble.swift */; };
 		5B0C13972494C79000DB1763 /* UICollectionView+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C13902494C79000DB1763 /* UICollectionView+Empty.swift */; };
 		5B0C13982494C79000DB1763 /* ZLLoadingAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C13912494C79000DB1763 /* ZLLoadingAble.swift */; };
+		5BE87CEF2498694600A607C7 /* ZLCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE87CEE2498694600A607C7 /* ZLCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		5B0C138F2494C79000DB1763 /* ZLLoadAble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLLoadAble.swift; sourceTree = "<group>"; };
 		5B0C13902494C79000DB1763 /* UICollectionView+Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Empty.swift"; sourceTree = "<group>"; };
 		5B0C13912494C79000DB1763 /* ZLLoadingAble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLLoadingAble.swift; sourceTree = "<group>"; };
+		5BE87CEE2498694600A607C7 /* ZLCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLCollectionViewController.swift; sourceTree = "<group>"; };
 		DCC054FA38B833AD4324B193 /* Pods-LoadDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoadDemo.release.xcconfig"; path = "Target Support Files/Pods-LoadDemo/Pods-LoadDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,10 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				5B0C138C2494C79000DB1763 /* UITableView+Empty.swift */,
+				5B0C13902494C79000DB1763 /* UICollectionView+Empty.swift */,
 				5B0C138D2494C79000DB1763 /* ZLLoadingViewController.swift */,
 				5B0C138E2494C79000DB1763 /* ZLTableViewController.swift */,
+				5BE87CEE2498694600A607C7 /* ZLCollectionViewController.swift */,
 				5B0C138F2494C79000DB1763 /* ZLLoadAble.swift */,
-				5B0C13902494C79000DB1763 /* UICollectionView+Empty.swift */,
 				5B0C13912494C79000DB1763 /* ZLLoadingAble.swift */,
 			);
 			path = Base;
@@ -245,6 +248,7 @@
 				5B0C13962494C79000DB1763 /* ZLLoadAble.swift in Sources */,
 				5B0C13922494C79000DB1763 /* ListViewController.swift in Sources */,
 				5B0C13792494C47900DB1763 /* SceneDelegate.swift in Sources */,
+				5BE87CEF2498694600A607C7 /* ZLCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

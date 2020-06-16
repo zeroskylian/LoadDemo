@@ -10,20 +10,19 @@ import UIKit
 
 class ZLTableViewController<T> : ZLLoadingViewController ,UITableViewDelegate, UITableViewDataSource{
     
-    
     required init(withStyle style :UITableView.Style) {
-        tableViewStyle = style
+        self.style = style
         super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
-        tableViewStyle = .plain
+        style = .plain
         super.init(coder: coder)
     }
     
-    lazy var tableView = UITableView(frame: self.view.bounds, style: tableViewStyle)
+    var style:UITableView.Style
     
-    var tableViewStyle:UITableView.Style
+    lazy var tableView = UITableView(frame: self.view.bounds, style: style)
     
     var dataSource:Array<T> = []
     
@@ -33,7 +32,6 @@ class ZLTableViewController<T> : ZLLoadingViewController ,UITableViewDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.contentInsetAdjustmentBehavior = .never
         tableView.delegate = self
         tableView.dataSource = self
@@ -47,9 +45,6 @@ class ZLTableViewController<T> : ZLLoadingViewController ,UITableViewDelegate, U
         tableView.frame = view.bounds
     }
     
-    
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
     }
@@ -59,16 +54,12 @@ class ZLTableViewController<T> : ZLLoadingViewController ,UITableViewDelegate, U
     }
     
     
-    func pullRefresh() {
-        
-    }
+    func pullRefresh() {}
     
-    func pushLoadMore() {
-        
-    }
+    func pushLoadMore() {}
 }
 
-extension ZLTableViewController :ZLLoadAble
+extension ZLTableViewController : ZLLoadAble
 {
     var scrollView: UIScrollView{
         return tableView
